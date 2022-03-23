@@ -7,15 +7,15 @@ function ShowTime() {
   }, []);
   return (
     <div>
-      <div className="card opacity-50 mt-2">
-        <h5 className="card-title">
+      <div className="mb-5">
+        <h4 className="text-center text-danger">
           {dateState.toLocaleString("en-US", {
             hour: "numeric",
             minute: "numeric",
             second: "numeric",
             hour12: true,
           })}
-        </h5>
+        </h4>
       </div>
     </div>
   );

@@ -1,20 +1,40 @@
+body {
+}
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
   background-size: cover;
   background-position: center;
+  font-family: "Indie Flower", cursive;
 }
-.clouds {
-  background-image: url("./components/images/background/cloud.webp");
+.fewclouds {
+  background-image: url("./components/images/background/few-clouds.jpg");
 }
-.winter {
-  background-image: url("./components/images/background/winter.jpg");
+.scatteredclouds {
+  background-image: url("./components/images/background/scattered-clouds.jpg");
 }
-.summer {
-  background-image: url("./components/images/background/summer.jpg");
+.brokenclouds {
+  background-image: url("./components/images/background/broken.jpg");
+}
+.showerrain {
+  background-image: url("./components/images/background/showerrain.jpg");
+}
+.rain {
+  background-image: url("./components/images/background/rain.jpg");
+}
+.thunderstorm {
+  background-image: url("./components/images/background/thunderstorm.jpg");
+}
+.mist {
+  background-image: url("./components/images/background/mist.jpg");
+}
+.snow {
+  background-image: url("./components/images/background/snow.jpg");
+}
+.clearsky {
+  background-image: url("./components/images/background/clear-sky.jpg");
 }
 .components {
   width: 50%;

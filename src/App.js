@@ -5,6 +5,9 @@ import Gettoday from "./components/Gettoday";
 import ResultCart from "./components/ResultCart";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ShowTime from "./components/ShowTime";
+import Header from "./components/Header";
+import Today from "./components/Today";
 
 const userId = "d7631044ba4bf4bb3aa5844cecf97978";
 
@@ -36,14 +39,29 @@ function App() {
   return (
     <div
       className={
-        (forecast.temperature < 0
-          ? "winter"
-          : forecast.temperature > 15
-          ? "summer"
-          : "clouds") + " App"
+        (forecast.description === "clear sky"
+          ? "clearsky"
+          : forecast.description === "few clouds"
+          ? "fewclouds"
+          : forecast.description === "scattered clouds"
+          ? "scatteredclouds"
+          : forecast.description === "broken clouds"
+          ? "brokenclouds"
+          : forecast.description === "shower rain"
+          ? "showerrain"
+          : forecast.description === "rain"
+          ? "rain"
+          : forecast.description === "thunderstorm"
+          ? "thunderstorm"
+          : forecast.description === "snow"
+          ? "	snow"
+          : "mist") + " App"
       }
     >
       <div className="components">
+        <Header />
+        <Today day={forecast.day} />
+        <ShowTime />
         <AddCity setCity={setCity} />
         <ResultCart forecast={forecast} />
       </div>

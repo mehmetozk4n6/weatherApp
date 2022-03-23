@@ -6,10 +6,6 @@ function ResultCart({ forecast }) {
 `;
   return (
     <div className="cardshow text-center">
-      <ShowTime />
-      <div className="card opacity-50 mt-2">
-        <h5 className="card-title">{forecast.day}</h5>
-      </div>
       <div className="card opacity-50 mt-2">
         <h5 className="card-title">{forecast.city}</h5>
       </div>
