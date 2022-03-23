@@ -3,9 +3,18 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("./components/images/background/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2018__07__CumulusHumilisCloudsAgainstBlueSky-3bd93f54a7414be58f274c4a37ffa833.webp");
+
   background-size: cover;
   background-position: center;
+}
+.clouds {
+  background-image: url("./components/images/background/cloud.webp");
+}
+.winter {
+  background-image: url("./components/images/background/winter.jpg");
+}
+.summer {
+  background-image: url("./components/images/background/summer.jpg");
 }
 .components {
   width: 50%;

@@ -11,6 +11,7 @@ const userId = "d7631044ba4bf4bb3aa5844cecf97978";
 function App() {
   const [city, setCity] = useState("Ankara");
   const [forecast, setForecast] = useState({});
+  const background = document.querySelector(".App");
   useEffect(() => {
     (async () => {
       const { data: cityInput } = await axios(
@@ -31,8 +32,17 @@ function App() {
       });
     })();
   }, [city]);
+
   return (
-    <div className="App">
+    <div
+      className={
+        (forecast.temperature < 0
+          ? "winter"
+          : forecast.temperature > 15
+          ? "summer"
+          : "clouds") + " App"
+      }
+    >
       <div className="components">
         <AddCity setCity={setCity} />
         <ResultCart forecast={forecast} />

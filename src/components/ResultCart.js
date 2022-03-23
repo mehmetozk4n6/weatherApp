@@ -1,11 +1,12 @@
-import moment from "moment";
 import React from "react";
+import ShowTime from "./ShowTime";
 
 function ResultCart({ forecast }) {
   let getIcon = `http://openweathermap.org/img/wn/${forecast.icon}@2x.png
 `;
   return (
     <div className="cardshow text-center">
+      <ShowTime />
       <div className="card opacity-50 mt-2">
         <h5 className="card-title">{forecast.day}</h5>
       </div>
@@ -14,9 +15,9 @@ function ResultCart({ forecast }) {
       </div>
 
       <div className="card opacity-75 mt-2">
-        <div className="row">
-          <div className="col-sm-6 bg-dark">
-            <div className="card-body ">
+        <div className="row m-0 p-0">
+          <div className="col-sm-6 bg-dark m-0 p-0 opacity-100">
+            <div className="card-body m-0">
               <img src={getIcon} />
             </div>
           </div>
