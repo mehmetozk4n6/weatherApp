@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   font-family: "Indie Flower", cursive;
+  background-image: url("./components/images/background/clearsky.jpg");
 }
 .fewclouds {
   background-image: url("./components/images/background/few-clouds.jpg");
