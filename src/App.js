@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     (async () => {
       const { data: cityInput } = await axios(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${userId}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${userId}`
       );
       let lat = await cityInput[0].lat;
       let lon = await cityInput[0].lon;

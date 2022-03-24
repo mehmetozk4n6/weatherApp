@@ -2,7 +2,7 @@ import React from "react";
 import ShowTime from "./ShowTime";
 
 function ResultCart({ forecast }) {
-  let getIcon = `http://openweathermap.org/img/wn/${forecast.icon}@2x.png
+  let getIcon = `https://openweathermap.org/img/wn/${forecast.icon}@2x.png
 `;
   return (
     <div className="cardshow text-center">
