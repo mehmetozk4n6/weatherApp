@@ -13,7 +13,7 @@ function ShowTime() {
             hour: "numeric",
             minute: "numeric",
             second: "numeric",
-            hour12: true,
+            hour12: "true",
           })}
         </h4>
       </div>
